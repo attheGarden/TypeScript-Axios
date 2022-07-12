@@ -2,10 +2,15 @@
   "compilerOptions": {
     "moduleResolution": "node",
     "target": "es5",
+    // 指定生成那个模块系统代码
     "module":"es2015",
+    // 编译过程中需要引入的库文件列表
     "lib": ["es2015", "es2016", "es2017", "dom"],
+    // 启用所有严格类型检查
     "strict": true,
+    // 生成对应的.map文件
     "sourceMap": true,
+    // 生成对应的.d.ts文件
     "declaration": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
