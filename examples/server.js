@@ -32,6 +32,8 @@ registerError()
 
 registerExtend()
 
+registerInterceptorRouter()
+
 app.use(router)
 
 
@@ -134,6 +136,15 @@ function registerExtend() {
     })
   })
 }
+
+function registerInterceptorRouter() {
+  router.get('/interceptor/get', function(req, res) {
+    res.send('hello')
+  })
+}
+
+
+
 
 
 
